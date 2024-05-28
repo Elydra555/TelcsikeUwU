@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -53,6 +54,12 @@ namespace TelcsikeUwU.Ablakok
             Browser bc = new Browser();
 
             BrowserCC.Content = bc;
+
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = "http://www.google.com",
+                UseShellExecute = true
+            });
         }
 
         private void PhoneClick(object sender, RoutedEventArgs e)
