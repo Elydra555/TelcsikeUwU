@@ -43,9 +43,23 @@ namespace TelcsikeUwU.Ablakok
 
         private void CameraClick(object sender, RoutedEventArgs e)
         {
-            Camera userControl = new Camera();
+            Camera cc = new Camera();
 
-            CameraCC.Content = userControl;
+            CameraCC.Content = cc;
+        }
+
+        private void BrowserClick(object sender, RoutedEventArgs e)
+        {
+            Browser bc = new Browser();
+
+            BrowserCC.Content = bc;
+        }
+
+        private void PhoneClick(object sender, RoutedEventArgs e)
+        {
+            Phone pc = new Phone();
+
+            PhoneCC.Content = pc;
         }
     }
 }

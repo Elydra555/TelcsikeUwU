@@ -50,5 +50,20 @@
 
         <ContentControl Name="CameraCC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="6"/>
 
+        <StackPanel Grid.Row="3" VerticalAlignment="Center">
+            <Button Background="Transparent" BorderBrush="Transparent" Click="BrowserClick">
+                <Icon:PackIconMaterial Kind="Earth" Height="75" Width="75" HorizontalAlignment="Center"></Icon:PackIconMaterial>
+            </Button>
+        </StackPanel>
+        <ContentControl Name="BrowserCC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="6"></ContentControl>
+
+        <StackPanel Grid.Row="4" Grid.Column="3" VerticalAlignment="Center">
+            <Button Background="Transparent" BorderBrush="Transparent" Click="PhoneClick">
+                <Icon:PackIconMaterial Kind="Phone" Height="75" Width="75" HorizontalAlignment="Center"></Icon:PackIconMaterial>
+            </Button>
+        </StackPanel>
+        <ContentControl Name="PhoneCC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="6"></ContentControl>
+
+
     </Grid>
 </Window>
