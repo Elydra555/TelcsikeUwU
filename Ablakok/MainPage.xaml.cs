@@ -10,15 +10,14 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TelcsikeUwU.NewFolder
+namespace TelcsikeUwU.Ablakok
 {
     /// <summary>
     /// Interaction logic for MainPage.xaml
     /// </summary>
-    public partial class MainPage : UserControl
+    public partial class MainPage : Window
     {
         public MainPage()
         {

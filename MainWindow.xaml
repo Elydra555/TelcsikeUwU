@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="450" Background="Transparent" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None">
 
-    <Grid>
+    <Grid x:Name="Griddie">
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\Elydra\Desktop\susus shit\prog\c#\telcsikeuwu\TelcsikeUwU\Images\image.png"/>
         </Grid.Background>
@@ -48,7 +48,7 @@
         <StackPanel Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Bottom">
             <Icon:PackIconMaterial Kind="Lock" Height="40" Width="40" HorizontalAlignment="Center" Padding="5"></Icon:PackIconMaterial>
             <TextBlock FontSize="25" HorizontalAlignment="Center" Margin="15">A telefon zárolva</TextBlock>
-            <Button Content="Katt ide a feloldáshoz" FontSize="15" Background="Transparent" BorderBrush="Transparent"></Button>
+            <Button Content="Katt ide a feloldáshoz" FontSize="15" Background="Transparent" BorderBrush="Transparent" Hyperlink.Click="Button_Click_1"></Button>
         </StackPanel>
 
     </Grid>
