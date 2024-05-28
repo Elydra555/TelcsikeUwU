@@ -10,7 +10,7 @@
 
     <Grid x:Name="Griddie">
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Elydra\Desktop\susus shit\prog\c#\telcsikeuwu\TelcsikeUwU\Images\image.png"/>
+            <ImageBrush ImageSource="\Images\image.png"/>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
