@@ -42,7 +42,7 @@
             <TextBlock FontSize="20" x:Name="TimeBig" Text="{Binding CurrentTime, StringFormat={}{0:HH:mm}}" VerticalAlignment="Center" Foreground="Black" HorizontalAlignment="Center"></TextBlock>
         </StackPanel>
 
-        <StackPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">
+        <StackPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" x:Name="CameraStack">
             <Button Background="Transparent" BorderBrush="Transparent" Click="CameraClick">
                 <Icon:PackIconMaterial Kind="Camera" Height="75" Width="75" HorizontalAlignment="Center"></Icon:PackIconMaterial>
             </Button>
@@ -50,21 +50,21 @@
 
         <ContentControl Name="CameraCC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="6"/>
 
-        <StackPanel Grid.Row="3" VerticalAlignment="Center">
+        <StackPanel Grid.Row="3" VerticalAlignment="Center" x:Name="BrowserStack">
             <Button Background="Transparent" BorderBrush="Transparent" Click="BrowserClick">
                 <Icon:PackIconMaterial Kind="Earth" Height="75" Width="75" HorizontalAlignment="Center"></Icon:PackIconMaterial>
             </Button>
         </StackPanel>
         <ContentControl Name="BrowserCC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="6"></ContentControl>
 
-        <StackPanel Grid.Row="4" Grid.Column="3" VerticalAlignment="Center">
+        <StackPanel Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" x:Name="PhoneStack">
             <Button Background="Transparent" BorderBrush="Transparent" Click="PhoneClick">
                 <Icon:PackIconMaterial Kind="Phone" Height="75" Width="75" HorizontalAlignment="Center"></Icon:PackIconMaterial>
             </Button>
         </StackPanel>
         <ContentControl Name="PhoneCC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="6"></ContentControl>
 
-        <StackPanel Grid.Row="6" Grid.Column="4" VerticalAlignment="Center">
+        <StackPanel Grid.Row="6" Grid.Column="4" VerticalAlignment="Center" x:Name="LayerStack">
             <Button Background="Transparent" BorderBrush="Transparent" Click="SettingsClick">
                 <Icon:PackIconMaterial Kind="Layers" Height="75" Width="75" HorizontalAlignment="Center"></Icon:PackIconMaterial>
             </Button>

@@ -38,6 +38,10 @@ namespace TelcsikeUwU.Ablakok
             this.Close();
 
             MainWindow mp = new MainWindow();
+            CameraStack.Children.Clear();
+            BrowserStack.Children.Clear();
+            PhoneStack.Children.Clear();
+            LayerStack.Children.Clear();
 
             mp.Show();
         }
@@ -45,6 +49,10 @@ namespace TelcsikeUwU.Ablakok
         private void CameraClick(object sender, RoutedEventArgs e)
         {
             Camera cc = new Camera();
+            CameraStack.Children.Clear();
+            BrowserStack.Children.Clear();
+            PhoneStack.Children.Clear();
+            LayerStack.Children.Clear();
 
             CameraCC.Content = cc;
         }
@@ -52,19 +60,27 @@ namespace TelcsikeUwU.Ablakok
         private void BrowserClick(object sender, RoutedEventArgs e)
         {
             Browser bc = new Browser();
+            CameraStack.Children.Clear();
+            BrowserStack.Children.Clear();
+            PhoneStack.Children.Clear();
+            LayerStack.Children.Clear();
 
             BrowserCC.Content = bc;
 
-            System.Diagnostics.Process.Start(new ProcessStartInfo
-            {
-                FileName = "http://www.google.com",
-                UseShellExecute = true
-            });
+            //System.Diagnostics.Process.Start(new ProcessStartInfo
+            //{
+            //    FileName = "http://www.google.com",
+            //    UseShellExecute = true
+            //});
         }
 
         private void PhoneClick(object sender, RoutedEventArgs e)
         {
             Phone pc = new Phone();
+            CameraStack.Children.Clear();
+            BrowserStack.Children.Clear();
+            PhoneStack.Children.Clear();
+            LayerStack.Children.Clear();
 
             PhoneCC.Content = pc;
         }
@@ -72,6 +88,10 @@ namespace TelcsikeUwU.Ablakok
         private void SettingsClick(object sender, RoutedEventArgs e)
         {
             Phone pc = new Phone();
+            CameraStack.Children.Clear();
+            BrowserStack.Children.Clear();
+            PhoneStack.Children.Clear();
+            LayerStack.Children.Clear();
 
             PhoneCC.Content = pc;
         }
