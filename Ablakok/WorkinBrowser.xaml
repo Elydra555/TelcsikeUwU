@@ -8,6 +8,11 @@
         mc:Ignorable="d"
         Title="WorkinBrowser" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <wv2:WebView2 x:Name="webView" Source="https://www.google.com"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <wv2:WebView2 x:Name="webView" Source="https://www.google.com" Grid.Row="0"/>
+        <Button Grid.Row="1" Content="Exit" Margin="5" FontSize="15" Click="Exit"></Button>
     </Grid>
 </Window>
