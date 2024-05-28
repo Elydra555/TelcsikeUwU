@@ -6,7 +6,7 @@
         xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:local="clr-namespace:TelcsikeUwU"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="450" Background="Transparent" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None">
+        Title="MainWindow" Height="800" Width="450" Background="Transparent" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen">
 
     <Grid x:Name="Griddie">
         <Grid.Background>
