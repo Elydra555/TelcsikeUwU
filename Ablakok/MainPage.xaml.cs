@@ -91,13 +91,16 @@ namespace TelcsikeUwU.Ablakok
 
         private void SettingsClick(object sender, RoutedEventArgs e)
         {
-            Phone pc = new Phone();
+            //Phone pc = new Phone();
+
+            SettingsCC.Content = new Settings();
+
             CameraStack.Children.Clear();
             BrowserStack.Children.Clear();
             PhoneStack.Children.Clear();
             LayerStack.Children.Clear();
 
-            PhoneCC.Content = pc;
+            //PhoneCC.Content = pc;
         }
     }
 }
