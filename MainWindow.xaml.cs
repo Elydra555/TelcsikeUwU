@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
-using TelcsikeUwU.NewFolder;
+using TelcsikeUwU.Ablakok;
 
 namespace TelcsikeUwU
 {
@@ -39,6 +39,20 @@ namespace TelcsikeUwU
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void OpenPhone(object sender, RoutedEventArgs e)
+        {
+            MainPage mp = new MainPage();
+
+            mp.Show();
+
+            this.Hide();
+        }
+
+        private void MainPage_Closed(object sender, EventArgs e)
+        {
+            this.Show();
         }
     }
 }

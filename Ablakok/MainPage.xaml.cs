@@ -19,9 +19,27 @@ namespace TelcsikeUwU.Ablakok
     /// </summary>
     public partial class MainPage : Window
     {
+        public event EventHandler OpenMainWindow;
+
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+            OpenMainWindow?.Invoke(this, EventArgs.Empty);
         }
     }
 }

@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:local="clr-namespace:TelcsikeUwU.Ablakok"
         mc:Ignorable="d"
         Title="MainPage" Height="800" Width="450" Background="Transparent" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None">
@@ -10,5 +11,36 @@
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\Elydra\Desktop\susus shit\prog\c#\telcsikeuwu\TelcsikeUwU\Images\mk.jpg"></ImageBrush>
         </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" Grid.ColumnSpan="5"></TextBlock>
+
+        <Icon:PackIconMaterial Kind="BatteryCharging" RotationAngle="90" Margin="5" Height="20" Width="20" HorizontalAlignment="Left"></Icon:PackIconMaterial>
+        <Icon:PackIconMaterial Kind="Signal" Width="20" Height="20" Margin="5" HorizontalAlignment="Center"></Icon:PackIconMaterial>
+        <Icon:PackIconMaterial Kind ="Wifi" Width="20" Height="20" Margin="5" HorizontalAlignment="Right"/>
+
+        <StackPanel Grid.Column="4">
+            <Button Content="X" Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Center" Margin="5" Click="Button_Click" FontSize="15" FontFamily="Times New Roman"></Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3">
+            <TextBlock FontSize="20" x:Name="TimeBig" Text="{Binding CurrentTime, StringFormat={}{0:HH:mm}}" VerticalAlignment="Center" Foreground="Black" HorizontalAlignment="Center"></TextBlock>
+        </StackPanel>
+
     </Grid>
 </Window>
