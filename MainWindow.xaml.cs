@@ -38,7 +38,7 @@ namespace TelcsikeUwU
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Application.Current.Shutdown();
         }
 
         private void OpenPhone(object sender, RoutedEventArgs e)

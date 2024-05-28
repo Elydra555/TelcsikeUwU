@@ -42,5 +42,13 @@
             <TextBlock FontSize="20" x:Name="TimeBig" Text="{Binding CurrentTime, StringFormat={}{0:HH:mm}}" VerticalAlignment="Center" Foreground="Black" HorizontalAlignment="Center"></TextBlock>
         </StackPanel>
 
+        <StackPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">
+            <Button Background="Transparent" BorderBrush="Transparent" Click="CameraClick">
+                <Icon:PackIconMaterial Kind="Camera" Height="75" Width="75" HorizontalAlignment="Center"></Icon:PackIconMaterial>
+            </Button>
+        </StackPanel>
+
+        <ContentControl Name="CameraCC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="6"/>
+
     </Grid>
 </Window>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,12 +35,17 @@ namespace TelcsikeUwU.Ablakok
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+
+            MainWindow mp = new MainWindow();
+
+            mp.Show();
         }
 
-        protected override void OnClosed(EventArgs e)
+        private void CameraClick(object sender, RoutedEventArgs e)
         {
-            base.OnClosed(e);
-            OpenMainWindow?.Invoke(this, EventArgs.Empty);
+            Camera userControl = new Camera();
+
+            CameraCC.Content = userControl;
         }
     }
 }
