@@ -68,5 +68,12 @@ namespace TelcsikeUwU.Ablakok
 
             PhoneCC.Content = pc;
         }
+
+        private void SettingsClick(object sender, RoutedEventArgs e)
+        {
+            Phone pc = new Phone();
+
+            PhoneCC.Content = pc;
+        }
     }
 }

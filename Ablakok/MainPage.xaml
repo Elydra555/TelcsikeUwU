@@ -64,6 +64,12 @@
         </StackPanel>
         <ContentControl Name="PhoneCC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="6"></ContentControl>
 
-
+        <StackPanel Grid.Row="6" Grid.Column="4" VerticalAlignment="Center">
+            <Button Background="Transparent" BorderBrush="Transparent" Click="SettingsClick">
+                <Icon:PackIconMaterial Kind="Layers" Height="75" Width="75" HorizontalAlignment="Center"></Icon:PackIconMaterial>
+            </Button>
+        </StackPanel>
+        <ContentControl Name="SettingsCC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="6"></ContentControl>
+        
     </Grid>
 </Window>
