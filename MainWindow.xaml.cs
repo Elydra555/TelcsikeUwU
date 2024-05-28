@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using TelcsikeUwU.Ablakok;
+using TelcsikeUwU.Class;
 
 namespace TelcsikeUwU
 {
@@ -48,11 +49,6 @@ namespace TelcsikeUwU
             mp.Show();
 
             this.Hide();
-        }
-
-        private void MainPage_Closed(object sender, EventArgs e)
-        {
-            this.Show();
         }
     }
 }

@@ -65,7 +65,11 @@ namespace TelcsikeUwU.Ablakok
             PhoneStack.Children.Clear();
             LayerStack.Children.Clear();
 
-            BrowserCC.Content = bc;
+            var browserWindow = new WorkinBrowser();
+
+            browserWindow.Show();
+
+            //BrowserCC.Content = bc;
 
             //System.Diagnostics.Process.Start(new ProcessStartInfo
             //{

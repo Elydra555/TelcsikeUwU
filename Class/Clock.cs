@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Timers;
 
-namespace TelcsikeUwU
+namespace TelcsikeUwU.Class
 {
     public class ClockViewModel : INotifyPropertyChanged
     {

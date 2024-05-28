@@ -55,7 +55,7 @@
                 <Icon:PackIconMaterial Kind="Earth" Height="75" Width="75" HorizontalAlignment="Center"></Icon:PackIconMaterial>
             </Button>
         </StackPanel>
-        <ContentControl Name="BrowserCC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="6"></ContentControl>
+        <!--<ContentControl Name="BrowserCC" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.ColumnSpan="5" Grid.RowSpan="6"></ContentControl>-->
 
         <StackPanel Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" x:Name="PhoneStack">
             <Button Background="Transparent" BorderBrush="Transparent" Click="PhoneClick">
